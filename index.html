@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <section>
+
+        <h2>Contato</h2>
+
+        <!-- API Static Forms -->
+        <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="436b2026-d471-46ba-b76a-9426d5448bcc">
+
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" autocomplete="off" required>
+
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <!-- Para onde vai ser redirecionado -->
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigada.html">
+
+        </form>
+
+    </section>
+
+</body>
+</html>
